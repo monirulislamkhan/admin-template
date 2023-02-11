@@ -6,104 +6,17 @@
     <title></title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./webroot/css/home.css" />
   </head>
   <body>
-    <!-- top header -->
-    <header class="header active">
-      <div class="header__left">
-        <div class="hamburger-controls">
-          <button class="dummy-btn">
-            <span class=""><i class="fa-solid fa-arrow-left"></i></span>
-          </button>
-        </div>
-        <div class="layout-top">
-          <h5>Report</h5>
-          <div class="layout-top__right">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active">Report</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="header__right">
-        <ul>
-          <li>
-            <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-moon"></i></button>
-          </li>
-          <li>
-            <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-bullhorn"></i></button>
-          </li>
-          <li class="weather-control">
-            <button class="btn users">
-              <i class="fa-solid fa-cloud"></i> <span></span> 56
-              <div class="weather-content">
-                <div class="weather-sunny"><img src="" alt="" /></div>
-                <div class="weather-top">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i> Ontario <span class="celsius-lable">56<sup>0</sup></span>
-                    <div class="weather-name">Sunny</div>
-                  </div>
-                  <div class="weather-time">
-                    <div class="weather-time__left">
-                      <div class="wind"><i class="fa-solid fa-wind"></i> 6 mph</div>
-                      <div class="ohters"><i class="fa-solid fa-wind"></i> 1013 hpa</div>
-                      <div class="ohters"><i class="fa-solid fa-droplet"></i> 92 %</div>
-                    </div>
-                    <div class="weather-time__slide">
-                      <div class="items">
-                        <div class="times">Now</div>
-                        <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
-                        <div class="ohters">56<sup>0</sup></div>
-                      </div>
-                      <div class="items">
-                        <div class="times">15:00</div>
-                        <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
-                        <div class="ohters">55<sup>0</sup></div>
-                      </div>
-                      <div class="items">
-                        <div class="times">16:00</div>
-                        <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
-                        <div class="ohters">56<sup>0</sup></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="weather-bottom">
-                  <div class="weather-bottom__list">
-                    <div class="">
-                      <div class="dates">March 15 <span class="days">Today</span></div>
-                    </div>
-                    <i class="fa-solid fa-sun"></i>
-                    <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
-                  </div>
-                  <div class="weather-bottom__list">
-                    <div class="">
-                      <div class="dates">March 16 <span class="days">Tomorrow</span></div>
-                    </div>
-                    <i class="fa-solid fa-sun"></i>
-                    <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
-                  </div>
-                  <div class="weather-bottom__list">
-                    <div class="">
-                      <div class="dates">March 15 <span class="days">Thursday</span></div>
-                    </div>
-                    <i class="fa-solid fa-sun"></i>
-                    <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
-                  </div>
-                </div>
-              </div>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </header>
     <!-- aside bar -->
     <aside class="side-content active">
       <div class="side-content__first">
         <div class="logo">
-          <a href=""><img src="./webroot/images/logo.png" alt="Logo" /></a>
+          <a href=""><img src="./webroot/images/logo-white.png" width="55" height="" alt="Logo" /></a>
         </div>
         <ul>
           <li>
@@ -184,6 +97,96 @@
 
     <!-- main content -->
     <main class="layout active">
+      <!-- top header -->
+      <header class="header">
+        <div class="header__left">
+          <div class="hamburger-controls">
+            <button class="dummy-btn">
+              <span class=""><i class="fa-solid fa-arrow-left"></i></span>
+            </button>
+          </div>
+          <div class="layout-top">
+            <h5>Report</h5>
+            <div class="layout-top__right">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active">Report</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <ul>
+            <li>
+              <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-moon"></i></button>
+            </li>
+            <li>
+              <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-bullhorn"></i></button>
+            </li>
+            <li class="weather-control">
+              <button class="btn users">
+                <i class="fa-solid fa-cloud"></i> <span></span> 56
+                <!-- <div class="weather-content">
+                  <div class="weather-sunny"><img src="" alt="" /></div>
+                  <div class="weather-top">
+                    <div class="location">
+                      <i class="fa-solid fa-location-dot"></i> Ontario <span class="celsius-lable">56<sup>0</sup></span>
+                      <div class="weather-name">Sunny</div>
+                    </div>
+                    <div class="weather-time">
+                      <div class="weather-time__left">
+                        <div class="wind"><i class="fa-solid fa-wind"></i> 6 mph</div>
+                        <div class="ohters"><i class="fa-solid fa-wind"></i> 1013 hpa</div>
+                        <div class="ohters"><i class="fa-solid fa-droplet"></i> 92 %</div>
+                      </div>
+                      <div class="weather-time__slide">
+                        <div class="items">
+                          <div class="times">Now</div>
+                          <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
+                          <div class="ohters">56<sup>0</sup></div>
+                        </div>
+                        <div class="items">
+                          <div class="times">15:00</div>
+                          <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
+                          <div class="ohters">55<sup>0</sup></div>
+                        </div>
+                        <div class="items">
+                          <div class="times">16:00</div>
+                          <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
+                          <div class="ohters">56<sup>0</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="weather-bottom">
+                    <div class="weather-bottom__list">
+                      <div class="">
+                        <div class="dates">March 15 <span class="days">Today</span></div>
+                      </div>
+                      <i class="fa-solid fa-sun"></i>
+                      <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
+                    </div>
+                    <div class="weather-bottom__list">
+                      <div class="">
+                        <div class="dates">March 16 <span class="days">Tomorrow</span></div>
+                      </div>
+                      <i class="fa-solid fa-sun"></i>
+                      <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
+                    </div>
+                    <div class="weather-bottom__list">
+                      <div class="">
+                        <div class="dates">March 15 <span class="days">Thursday</span></div>
+                      </div>
+                      <i class="fa-solid fa-sun"></i>
+                      <div class=""><span>+57<sup>0</sup>F</span> <span>+57<sup>0</sup>F</span></div>
+                    </div>
+                  </div>
+                </div> -->
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
       <div class="layout-body">
         <div class="cards">
           <div class="cards__items">

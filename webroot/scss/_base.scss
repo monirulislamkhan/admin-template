@@ -1,14 +1,63 @@
 $primary: #405189;
-// $secondary: #ff0000;
+$secondary: #ff0000;
 $body-bg: #f5f5fc;
-// $body-bg: #282c34;
+$body-color: #111111;
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$font-base: "Poppins", sans-serif;
 $border-radius: 0.3rem;
 $custom-shadow: 0 0.125rem 0.25rem rgba($primary, 0.075);
 :root {
-  --sidebar-with: 250px;
+  --sidebar-width: 90px;
+  --sidebar-width-active: 350px;
   --header-height: 69px;
   --layout-space-x: 1.2rem;
+  --gradient-primary: #e87051;
+  --gradient-secondary: #f2b34f;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 $transition: all 0.4s;
 $font-weight-600: 600;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-base;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  background-color: $body-bg;
+  line-height: 1.7;
+  color: $body-color;
+}
+
+body {
+}

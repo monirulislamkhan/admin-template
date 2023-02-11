@@ -1,20 +1,14 @@
 .header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: auto;
-  z-index: 1030;
-  background-color: $white;
+  background-color: $body-bg;
   // background-color: $body-bg;
-  height: var(--header-height);
+  // height: var(--header-height);
   // border-bottom: 1px solid $gray-300;
   display: flex;
   justify-content: space-between;
   &.active {
-    left: var(--sidebar-with);
-    width: calc(100% - var(--sidebar-with));
-    display: none;
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    // display: none;
   }
   &__left {
     display: flex;

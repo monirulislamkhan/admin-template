@@ -1,23 +1,11 @@
 @import "_base";
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
 @import "mixin";
 @import "common";
 @import "header";
 @import "sidebar";
 @import "layout";
-body {
-  position: relative;
-  &::before {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    // z-index: 10000;
-    content: "";
-    // background-color: rgba($gray-900, 0.9);
-  }
-}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -37,36 +25,6 @@ body {
     &:first-child {
       flex: 1 1 auto;
     }
-  }
-  .welcome-items {
-    display: flex;
-    column-gap: var(--layout-space-x);
-    &__left {
-      flex: 1 1 auto;
-    }
-    &__right {
-      flex: 1 0 144px;
-    }
-  }
-  .earning {
-    display: flex;
-    flex-direction: column;
-    &__items {
-      display: flex;
-      justify-content: space-between;
-      &:not(:last-child) {
-        margin-bottom: 1.2rem;
-      }
-      &.price {
-        font-size: 1.5rem;
-      }
-    }
-    &-2 {
-      color: $success;
-    }
-  }
-  .btns {
-    display: flex;
   }
 }
 
@@ -89,7 +47,7 @@ body {
 
 .scrolltest {
   height: 200px;
-  @extend %scrollbar;
+  // @extend %scrollbar;
 }
 
 .cards3 {
