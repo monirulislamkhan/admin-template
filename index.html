@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./webroot/css/home.css" />
+  </head>
+  <body>
+    <!-- top header -->
+    <header class="header active">
+      <div class="header__left">
+        <div class="hamburger-controls">
+          <button class="dummy-btn">
+            <span class=""><i class="fa-solid fa-arrow-left"></i></span>
+          </button>
+        </div>
+        <div class="layout-top">
+          <h5>Report</h5>
+          <div class="layout-top__right">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active">Report</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <ul>
+          <li>
+            <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-moon"></i></button>
+          </li>
+          <li>
+            <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-bullhorn"></i></button>
+          </li>
+          <li>
+            <button class="btn btn-outline-primary btn-custom" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-bell"></i>
+              <span class="badge text-bg-danger">3</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end notify-controls">
+              <div class="notify">
+                <div class="notify__top">
+                  <h6>Notifications (3)</h6>
+                  <div class="notify-count"><span class="badge text-bg-danger">5</span></div>
+                </div>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="user-control">
+            <button class="btn users">
+              <div class="users-img"><i class="fa-solid fa-cloud"></i></div>
+              <div class="users-content">
+                <div class="users__name">Monirul Islam Khan</div>
+                <div class="users__designation">UI Developer</div>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- aside bar -->
+    <aside class="side-content active">
+      <div class="side-content__first">
+        <div class="logo">
+          <a href=""><img src="logo.png" alt="Logo" /></a>
+        </div>
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-users-line"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-box"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-people-roof"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-list"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-award"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-hand-holding-dollar"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-gear"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-headset"></i></a>
+          </li>
+        </ul>
+        <div class="logout">
+          <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </div>
+
+      <div class="side-content__last">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-people-roof"></i> Lender Management</a>
+          </li>
+
+          <li>
+            <a href=""><i class="fa-solid fa-address-card"></i> Reporting</a>
+            <ul>
+              <li><a href="">Company Report</a></li>
+              <li><a href="">All Lead Report</a></li>
+              <li><a href="">Lead Details Report</a></li>
+              <li><a href="">Agent Report</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href=""><i class="fa-solid fa-gear"></i> Settings</a>
+            <ul>
+              <li><a href="">Auto Inventory</a></li>
+              <li><a href="">RV Inventory</a></li>
+              <li><a href="">Agent View</a></li>
+              <li><a href="">Snippets</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-gear"></i> Support</a>
+            <ul>
+              <li><a href="">Reports</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="copyright">Copyright &copy; 2022 All Rights reserved.</div>
+      </div>
+    </aside>
+
+    <!-- main content -->
+    <main class="layout active">
+      <div class="layout-body">
+        <div class="cards">
+          <div class="cards__items">
+            <div class="cards__name">Call</div>
+            <div class="cards__value">Call</div>
+          </div>
+          <div class="cards__items">
+            <div class="cards__name">Email</div>
+            <div class="cards__value">Email</div>
+          </div>
+          <div class="cards__items">
+            <div class="cards__name">SMS</div>
+            <div class="cards__value">1087</div>
+          </div>
+          <div class="cards__items">
+            <div class="cards__name">Visits</div>
+            <div class="cards__value">7655</div>
+          </div>
+          <div class="cards__items">
+            <div class="cards__name">Leads</div>
+            <div class="cards__value">1627</div>
+          </div>
+        </div>
+        <div class="cards2">
+          <div class="cards2__items">
+            <div class="top">
+              <div class="heading">Agents</div>
+              <div class=""><a href="">View All</a></div>
+            </div>
+            <ul>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-09.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-03.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-05.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-06.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-07.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-08.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+
+              <li>
+                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-01.jpg" alt="Agent Name" /></div>
+                <div class="">
+                  <div class="name">Karan Okla</div>
+                  <div class="">London</div>
+                </div>
+                <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="cards2__items">
+            <!-- <div class="scrolltest">
+            </div> -->
+            <div class="top">
+              <div class="heading">Outgoing Activities</div>
+            </div>
+            <div class="table-sm">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Calls</th>
+                    <th scope="col">Emails</th>
+                    <th scope="col">SMS</th>
+                    <th scope="col">TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="cards2__items">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+        <div class="cards3">
+          <div class="cards3__items">
+            <div class="top">
+              <div class="heading">Stories</div>
+            </div>
+            <div class="table-sm">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">List</th>
+                    <th scope="col">Leads Contacted</th>
+                    <th scope="col">Appointment</th>
+                    <th scope="col">Sales</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="cards3__items">
+            <div class="top">
+              <div class="heading">Ratios</div>
+            </div>
+            <div class="table-sm">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">%</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Ratio</th>
+                    <th scope="col">Objective</th>
+                    <th scope="col">Variation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
+    <script src="./webroot/js/custom-chart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+$primary: #405189;
+// $secondary: #ff0000;
+$body-bg: #f5f5fc;
+// $body-bg: #282c34;
+$border-radius: 0.3rem;
+$custom-shadow: 0 0.125rem 0.25rem rgba($primary, 0.075);
+:root {
+  --sidebar-with: 250px;
+  --header-height: 69px;
+  --layout-space-x: 1.2rem;
+}
+
+$transition: all 0.4s;
+$font-weight-600: 600;

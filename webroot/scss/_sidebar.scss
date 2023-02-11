@@ -1,0 +1,15 @@
+.side-content {
+  width: 0;
+  height: 100vh;
+  background: rgb(232, 112, 81);
+  background: linear-gradient(0deg, rgba(232, 112, 81, 1) 0%, rgba(242, 179, 79, 1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  z-index: 10;
+  overflow-y: auto;
+  &.active {
+    width: var(--sidebar-with);
+  }
+}

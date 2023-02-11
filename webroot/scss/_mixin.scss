@@ -1,0 +1,43 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == max767 {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == max991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == min992 {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == min768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+%scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color $transition;
+  &:hover {
+    scrollbar-color: $gray-900 transparent;
+  }
+  &:not(:hover)::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba($gray-500, 0.75);
+  }
+}

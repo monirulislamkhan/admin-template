@@ -1,0 +1,19 @@
+footer {
+  // background: url('../images/footer__pattern.svg') repeat;
+  background-size: 24px;
+  // margin-top: 4rem;
+  position: relative;
+  border-top: 1px solid rgba($primary, 0.1);
+  background-color: darken($primary, 19);
+
+  .copyright {
+    font-size: 0.9rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    // color: $gray-900;
+    color: $gray-500;
+    @media (max-width: 991px) {
+      padding-bottom: 6rem;
+    }
+  }
+}
