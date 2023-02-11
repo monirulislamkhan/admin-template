@@ -14,6 +14,7 @@
   &.active {
     left: var(--sidebar-with);
     width: calc(100% - var(--sidebar-with));
+    display: none;
   }
   &__left {
     display: flex;
@@ -63,39 +64,6 @@
           }
           &:hover {
             // background-color: rgba($primary, 0.2);
-            i {
-              // color: $primary;
-            }
-          }
-        }
-        &.user-control {
-          align-self: center;
-          height: var(--header-height);
-          background-color: $body-bg;
-          display: flex;
-          align-items: center;
-        }
-        .users {
-          display: flex;
-          column-gap: 0.5rem;
-          text-align: left;
-          justify-content: flex-end;
-          align-content: flex-end;
-          &__name,
-          &__designation {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            @include responsive(min768) {
-              // width: 140px;
-            }
-          }
-          &__name {
-            font-weight: $font-weight-600;
-            line-height: 1;
-          }
-          &__designation {
-            font-size: 0.8rem;
           }
         }
       }

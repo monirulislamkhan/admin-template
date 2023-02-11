@@ -30,6 +30,10 @@ body {
     flex: 1 1 33%;
     // flex: 1 1 auto;
     border-radius: $border-radius;
+    background: url("../images/top-column.png") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
     &:first-child {
       flex: 1 1 auto;
     }

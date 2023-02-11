@@ -11,5 +11,6 @@
   overflow-y: auto;
   &.active {
     width: var(--sidebar-with);
+    display: none;
   }
 }
