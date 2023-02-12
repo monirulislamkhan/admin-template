@@ -1,10 +1,19 @@
 .side-content {
   width: var(--sidebar-width);
+  @include responsive(max430) {
+    width: calc(var(--sidebar-width) - var(--sidebar-width) + 2px);
+  }
   a {
     color: $white;
   }
   &.active {
     width: var(--sidebar-width-active);
+    .side-content__first {
+      @include responsive(max430) {
+        width: var(--sidebar-width);
+        display: flex;
+      }
+    }
   }
   background: $gradient-primary;
   background: linear-gradient(0deg, $gradient-primary 0%, $gradient-secondary 100%);
@@ -13,7 +22,6 @@
   left: 0;
   right: auto;
   z-index: 1040;
-  // overflow-y: auto;
   display: flex;
   .button-controls {
     position: absolute;
@@ -42,6 +50,10 @@
     padding-bottom: 1.5rem;
     align-items: center;
     flex: 0 0 auto;
+    @include responsive(max430) {
+      width: calc(var(--sidebar-width) - var(--sidebar-width) + 2px);
+      display: none;
+    }
     i {
       color: $white;
       font-size: 1.2rem;

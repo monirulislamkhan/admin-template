@@ -11,7 +11,7 @@ new Chart(ctx, {
     ],
   },
   options: {
-    // responsive: true,
+    responsive: true,
     scales: {
       y: {
         beginAtZero: true,
@@ -28,4 +28,8 @@ $(".button-controls").on("click", function () {
   } else {
     $(".overlay").remove();
   }
+});
+
+$(".weather-control").hover(function () {
+  $(".weather-content").slideToggle(0);
 });

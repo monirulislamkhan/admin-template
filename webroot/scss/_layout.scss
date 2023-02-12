@@ -1,6 +1,9 @@
 .layout {
   position: relative;
   margin-left: var(--sidebar-width);
+  @include responsive(max430) {
+    margin-left: calc(var(--sidebar-width) - var(--sidebar-width));
+  }
   &.active {
     margin-left: var(--sidebar-width-active);
   }
@@ -14,8 +17,6 @@
     padding-right: var(--layout-space-x);
     display: flex;
     justify-content: space-between;
-    &__right {
-    }
   }
   &-body {
     padding: var(--layout-space-x);

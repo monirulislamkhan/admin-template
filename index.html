@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -100,22 +101,26 @@
     <main class="layout">
       <header class="header">
         <div class="header__left">
-          <h5>Report</h5>
-          <ol class="mb-0">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            <li class="breadcrumb-item active">Report</li>
+          <h2>Report</h2>
+          <ol>
+            <li><a href="#">Dashboard</a></li>
+            <li>></li>
+            <li class="active">Report</li>
           </ol>
         </div>
         <div class="header__right">
           <ul>
             <li>
-              <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-moon"></i></button>
+              <button class="btn btn-custom"><i class="fa-solid fa-moon"></i></button>
             </li>
             <li>
-              <button class="btn btn-outline-primary btn-custom"><i class="fa-solid fa-bullhorn"></i></button>
+              <button class="btn btn-custom"><i class="fa-solid fa-bullhorn"></i></button>
             </li>
-            <li class="weather-control">
-              <a class="btn users" href="javascript:void();"> <i class="fa-solid fa-cloud"></i> 56<sup>0</sup> </a>
+            <li>
+              <button class="btn btn-custom"><i class="fa-solid fa-bell"></i> <span class="badge"></span></button>
+            </li>
+            <li>
+              <a class="weather-control" href="javascript:void();"> <i class="fa-solid fa-cloud"></i>56<sup>0</sup> </a>
               <div class="weather-content">
                 <div class="weather-sunny"><img src="./webroot/images/sunny.png" alt="Sunny" /></div>
                 <div class="weather-top">
@@ -406,7 +411,7 @@
                 </div>
               </div>
             </div>
-            <canvas id="myChart" height="150px"></canvas>
+            <canvas id="myChart""></canvas>
           </div>
         </div>
 

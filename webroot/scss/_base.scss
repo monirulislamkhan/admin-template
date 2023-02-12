@@ -24,6 +24,9 @@ $gradient-secondary: #f2b34f;
   --sidebar-width-active: 350px;
   --header-height: 69px;
   --layout-space-x: 1.2rem;
+  @media (max-width: 430px) {
+    --sidebar-width-active: 320px;
+  }
 }
 .overlay {
   background-color: rgba($black, 0.9);

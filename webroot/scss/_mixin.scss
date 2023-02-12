@@ -1,4 +1,9 @@
 @mixin responsive($breakpoint) {
+  @if $breakpoint == max430 {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
   @if $breakpoint == max767 {
     @media (max-width: 767px) {
       @content;
@@ -6,6 +11,11 @@
   }
   @if $breakpoint == max991 {
     @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == max1199 {
+    @media (max-width: 1199px) {
       @content;
     }
   }
@@ -73,9 +83,16 @@
     flex: 1 1 calc(100% + 0.5rem);
     display: block;
     padding: 1rem;
-    &:first-child {
-      // flex-basis: 20%;
-      // flex-grow: 1;
+    @include responsive(max430) {
+      font-size: 0.8rem;
     }
+  }
+}
+
+@include responsive(max430) {
+  th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
