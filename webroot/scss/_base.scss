@@ -17,19 +17,47 @@ $font-base: "Poppins", sans-serif;
 $border-radius: 0.5rem;
 $custom-shadow: 0 0.125rem 0.25rem rgba($primary, 0.075);
 $link-color: $primary;
+$gradient-primary: #e87051;
+$gradient-secondary: #f2b34f;
 :root {
   --sidebar-width: 90px;
   --sidebar-width-active: 350px;
   --header-height: 69px;
   --layout-space-x: 1.2rem;
-  --gradient-primary: #e87051;
-  --gradient-secondary: #f2b34f;
+}
+.overlay {
+  background-color: rgba($black, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1039;
+  width: 100vw;
+  height: 100vh;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  // color:;
+  background-color: $white;
+  border: 1px solid rgba($gray-500, 0.4);
+  border-radius: $border-radius;
+  // appearance: none;
+
+  &:focus {
+    // border-color:;
+    outline: 0;
+  }
+}
+
+.custom-padding {
+  padding: 1rem;
 }
 
 a {
   color: $primary;
-}
-a:hover {
   text-decoration: none;
 }
 
@@ -60,7 +88,4 @@ body {
   background-color: $body-bg;
   line-height: 1.7;
   color: $body-color;
-}
-
-body {
 }

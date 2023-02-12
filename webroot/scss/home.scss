@@ -5,6 +5,20 @@
 @import "header";
 @import "sidebar";
 @import "layout";
+.sub-controls {
+  border-top: rgba($gray-400, 0.5) solid 1px;
+  border-bottom: rgba($gray-400, 0.5) solid 1px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: var(--layout-space-x);
+  margin-left: var(--layout-space-x);
+  padding: var(--layout-space-x) 0;
+  column-gap: var(--layout-space-x);
+  input,
+  select {
+    padding: 0.9rem;
+  }
+}
 
 .cards {
   display: flex;
@@ -36,16 +50,17 @@
   &__items {
     background-color: $white;
     box-shadow: $custom-shadow;
-    padding: 1rem;
-    flex: 1 1 25%;
     border-radius: $border-radius;
+    // flex: 1 1 25%;
+    width: 25%;
     &:last-child {
-      flex: 1 1 50%;
+      width: 50%;
     }
+
     .agents {
       display: flex;
       flex-direction: column;
-      max-height: 290px;
+      max-height: 320px;
       @extend %scrollbar;
       &-pic {
         width: 35px;
@@ -73,14 +88,35 @@
       }
     }
 
-    .calls {
-      color: #217772;
+    .chart-control {
+      display: flex;
+      column-gap: 0.9rem;
     }
-    .emails {
-      color: #ed9389;
-    }
-    .sms {
-      color: #5563b0;
+
+    .table-custom {
+      @extend %custom-table-pattern;
+      tbody {
+        max-height: 290px;
+        @extend %scrollbar;
+      }
+      .calls,
+      .emails,
+      .sms {
+        display: flex;
+        align-items: center;
+        i {
+          margin-right: 0.2rem;
+        }
+      }
+      .calls {
+        color: #217772;
+      }
+      .emails {
+        color: #ed9389;
+      }
+      .sms {
+        color: #5563b0;
+      }
     }
   }
 }
@@ -93,25 +129,22 @@
   &__items {
     background-color: $white;
     box-shadow: $custom-shadow;
-    padding: 1rem;
-    flex: 1 1 50%;
+    // flex: 1 1 50%;
+    width: 50%;
     border-radius: $border-radius;
   }
-}
-.cards4 {
-  display: flex;
-  justify-content: space-between;
-  column-gap: var(--layout-space-x);
-  margin-bottom: var(--layout-space-x);
-  &__items {
-    background-color: $white;
-    box-shadow: $custom-shadow;
-    padding: 1rem;
-    flex: 0 1 25%;
-    border-radius: $border-radius;
-    &:first-child {
-      flex: 1 1 auto;
+  .table-custom1 {
+    @extend %custom-table-pattern;
+    tbody {
+      max-height: 300px;
+      @extend %scrollbar;
+    }
+    td,
+    th {
+      flex: 1 1 calc(100% + 0.5rem);
+      text-align: left;
     }
   }
 }
-@import "footer";
+
+// @import "footer";

@@ -20,8 +20,12 @@ new Chart(ctx, {
   },
 });
 
-const mediaQuery = window.matchMedia("(max-width: 768px)");
-$(".dummy-btn").on("click", function () {
-  $(".header, .side-content, .layout").toggleClass("active", 300);
-  $("i", this).toggleClass("fa-solid fa-arrow-left fa-solid fa-arrow-right", 300);
+$(".button-controls").on("click", function () {
+  $(".side-content, .side-content__last").toggleClass("active");
+  $("i", this).toggleClass("fa-solid fa-chevron-left fa-solid fa-chevron-right");
+  if ($(".side-content").hasClass("active")) {
+    $("body").append("<div class='overlay'></div>");
+  } else {
+    $(".overlay").remove();
+  }
 });

@@ -1,22 +1,39 @@
 .side-content {
   width: var(--sidebar-width);
+  a {
+    color: $white;
+  }
   &.active {
     width: var(--sidebar-width-active);
-    // display: none;
   }
-  // margin-right: 100vh;
-  background: var(--gradient-primary);
-  background: linear-gradient(0deg, var(--gradient-primary) 0%, var(--gradient-secondary) 100%);
+  background: $gradient-primary;
+  background: linear-gradient(0deg, $gradient-primary 0%, $gradient-secondary 100%);
   position: fixed;
   top: 0;
   left: 0;
   right: auto;
-  z-index: 10;
-  overflow-y: auto;
+  z-index: 1040;
+  // overflow-y: auto;
   display: flex;
+  .button-controls {
+    position: absolute;
+    top: 2rem;
+    right: -0.9rem;
+    padding: 0.6rem;
+    background-color: darken($gradient-primary, 40);
+    color: $white;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+  }
   &__first {
     width: var(--sidebar-width);
-    border: red solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,6 +41,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     align-items: center;
+    flex: 0 0 auto;
     i {
       color: $white;
       font-size: 1.2rem;
@@ -43,16 +61,53 @@
     }
   }
   &__last {
-    border: red solid 1px;
-    // display: flex;
+    &.active {
+      display: flex !important;
+      border-left: 1px solid rgba($white, 0.2);
+      padding-left: 1rem;
+    }
     display: none;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    i {
-      color: $white;
-      font-size: 1.2rem;
+    ul {
+      font-size: 0.95rem;
+      > li {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        i {
+          color: rgba($white, 0.7);
+          font-size: 1.1rem;
+          margin-right: 0.5rem;
+        }
+        > ul {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-size: 0.85rem;
+          border-left: 2px solid rgba($white, 0.2);
+          li {
+            margin-top: 0;
+            margin-bottom: 0;
+            a {
+              display: block;
+              padding: 0.2rem 0.8rem;
+              transition: $transition;
+              margin-left: -2px;
+              &:hover {
+                background-color: rgba($white, 0.2);
+                border-left: 2px solid rgba($white, 1);
+                padding-left: 1.5rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
+}
+.copyright {
+  text-align: center;
+  font-size: 0.7rem;
+  color: $white;
 }
