@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- aside bar -->
-    <aside class="side-content active">
+    <aside class="side-content">
       <div class="side-content__first">
         <div class="logo">
           <a href=""><img src="./webroot/images/logo-white.png" width="55" height="" alt="Logo" /></a>
@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="side-content__last">
+      <div class="side-content__last active">
         <ul>
           <li>
             <a href=""><i class="fa-solid fa-people-roof"></i> Lender Management</a>
@@ -96,7 +96,7 @@
     </aside>
 
     <!-- main content -->
-    <main class="layout active">
+    <main class="layout">
       <!-- top header -->
       <header class="header">
         <div class="header__left">
@@ -105,15 +105,15 @@
               <span class=""><i class="fa-solid fa-arrow-left"></i></span>
             </button>
           </div>
-          <div class="layout-top">
+          <!-- <div class="layout-top">
             <h5>Report</h5>
             <div class="layout-top__right">
-              <ol class="breadcrumb mb-0">
+              <ol class="mb-0">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active">Report</li>
               </ol>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="header__right">
           <ul>
@@ -212,103 +212,154 @@
         </div>
         <div class="cards2">
           <div class="cards2__items">
-            <div class="top">
-              <div class="heading">Agents</div>
-              <div class=""><a href="">View All</a></div>
+            <div class="headings">
+              <h3>Agents</h3>
+              <a href="#">View All</a>
             </div>
-            <ul>
+            <ul class="agents">
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-09.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-09.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla lorem</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-03.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-03.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-05.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-05.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-06.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-06.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-07.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-07.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-08.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-08.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
 
               <li>
-                <div class="agent-pic"><img src="./webroot/images/pic-avtar/img-01.jpg" alt="Agent Name" /></div>
-                <div class="">
-                  <div class="name">Karan Okla</div>
-                  <div class="">London</div>
+                <img src="./webroot/images/pic-avtar/img-01.jpg" class="agents-pic" alt="Agent Name" />
+                <div class="agents__details">
+                  <h4>Karan Okla</h4>
+                  <div class="location">London</div>
                 </div>
                 <a href=""><i class="fa-solid fa-chevron-right"></i></a>
               </li>
             </ul>
           </div>
           <div class="cards2__items">
-            <!-- <div class="scrolltest">
-            </div> -->
-            <div class="top">
-              <div class="heading">Outgoing Activities</div>
-            </div>
+            <div class="headings"><h3>Outgoing Activities</h3></div>
             <div class="table-sm">
-              <table class="table">
+              <table class="table-custom">
                 <thead>
                   <tr>
-                    <th scope="col">Calls</th>
-                    <th scope="col">Emails</th>
-                    <th scope="col">SMS</th>
-                    <th scope="col">TOTAL</th>
+                    <th class="calls"><i class="fa-solid fa-phone"></i> Calls</th>
+                    <th class="emails"><i class="fa-solid fa-envelope"></i> Emails</th>
+                    <th class="sms"><i class="fa-solid fa-comment-sms"></i> SMS</th>
+                    <th class="total">TOTAL</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="body-half-screen">
                   <tr>
-                    <th>1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>135</td>
+                    <td>54</td>
+                    <td>405</td>
+                    <th>200</th>
                   </tr>
                   <tr>
-                    <th>2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>99</td>
+                    <td>22</td>
+                    <td>305</td>
+                    <th>121</th>
                   </tr>
                   <tr>
-                    <th>3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td>78</td>
+                    <td>147</td>
+                    <td>445</td>
+                    <th>30</th>
+                  </tr>
+                  <tr>
+                    <td>135</td>
+                    <td>54</td>
+                    <td>405</td>
+                    <th>200</th>
+                  </tr>
+                  <tr>
+                    <td>99</td>
+                    <td>22</td>
+                    <td>305</td>
+                    <th>121</th>
+                  </tr>
+                  <tr>
+                    <td>78</td>
+                    <td>147</td>
+                    <td>445</td>
+                    <th>30</th>
+                  </tr>
+                  <tr>
+                    <td>135</td>
+                    <td>54</td>
+                    <td>405</td>
+                    <th>200</th>
+                  </tr>
+                  <tr>
+                    <td>99</td>
+                    <td>22</td>
+                    <td>305</td>
+                    <th>121</th>
+                  </tr>
+                  <tr>
+                    <td>78</td>
+                    <td>147</td>
+                    <td>445</td>
+                    <th>30</th>
+                  </tr>
+                  <tr>
+                    <td>135</td>
+                    <td>54</td>
+                    <td>405</td>
+                    <th>200</th>
+                  </tr>
+                  <tr>
+                    <td>99</td>
+                    <td>22</td>
+                    <td>305</td>
+                    <th>121</th>
+                  </tr>
+                  <tr>
+                    <td>78</td>
+                    <td>147</td>
+                    <td>445</td>
+                    <th>30</th>
                   </tr>
                 </tbody>
               </table>
@@ -325,13 +376,13 @@
               <div class="heading">Stories</div>
             </div>
             <div class="table-sm">
-              <table class="table">
+              <table class="table-custom">
                 <thead>
                   <tr>
-                    <th scope="col">List</th>
-                    <th scope="col">Leads Contacted</th>
-                    <th scope="col">Appointment</th>
-                    <th scope="col">Sales</th>
+                    <th>List</th>
+                    <th>Leads Contacted</th>
+                    <th>Appointment</th>
+                    <th>Sales</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -349,7 +400,7 @@
                   </tr>
                   <tr>
                     <th>3</th>
-                    <td colspan="2">Larry the Bird</td>
+                    <td>Larry the Bird</td>
                     <td>@twitter</td>
                   </tr>
                 </tbody>
@@ -362,14 +413,14 @@
               <div class="heading">Ratios</div>
             </div>
             <div class="table-sm">
-              <table class="table">
+              <table class="table-custom">
                 <thead>
                   <tr>
-                    <th scope="col">%</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Ratio</th>
-                    <th scope="col">Objective</th>
-                    <th scope="col">Variation</th>
+                    <th>%</th>
+                    <th>Total</th>
+                    <th>Ratio</th>
+                    <th>Objective</th>
+                    <th>Variation</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -389,7 +440,7 @@
                   </tr>
                   <tr>
                     <th>3</th>
-                    <td colspan="2">Larry the Bird</td>
+                    <td>Larry the Bird</td>
                     <td>@twitter</td>
                     <td>@twitter</td>
                   </tr>

@@ -1,13 +1,12 @@
 const ctx = document.getElementById("myChart");
 new Chart(ctx, {
-  type: "line",
+  type: "bar",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["Sales", "Visits", "Apointments"],
     datasets: [
       {
         label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1,
+        data: [12, 19, 3],
       },
     ],
   },

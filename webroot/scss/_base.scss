@@ -14,8 +14,9 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 $font-base: "Poppins", sans-serif;
-$border-radius: 0.3rem;
+$border-radius: 0.5rem;
 $custom-shadow: 0 0.125rem 0.25rem rgba($primary, 0.075);
+$link-color: $primary;
 :root {
   --sidebar-width: 90px;
   --sidebar-width-active: 350px;
@@ -25,7 +26,9 @@ $custom-shadow: 0 0.125rem 0.25rem rgba($primary, 0.075);
   --gradient-secondary: #f2b34f;
 }
 
-a,
+a {
+  color: $primary;
+}
 a:hover {
   text-decoration: none;
 }
@@ -46,14 +49,14 @@ $font-weight-600: 600;
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 body {
   box-sizing: border-box;
   font-family: $font-base;
   font-weight: 400;
-  /*font-size: 16px;*/
+  // font-size: 16px;
   background-color: $body-bg;
   line-height: 1.7;
   color: $body-color;

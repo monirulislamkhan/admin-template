@@ -44,7 +44,8 @@
   }
   &__last {
     border: red solid 1px;
-    display: flex;
+    // display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 1.5rem;
