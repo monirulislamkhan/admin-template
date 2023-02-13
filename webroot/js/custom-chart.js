@@ -5,8 +5,9 @@ new Chart(ctx, {
     labels: ["Sales", "Visits", "Apointments"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "Sales",
         data: [12, 19, 3],
+        backgroundColor: ["#86d3e3", "#b9b9b9", "#faae47"],
       },
     ],
   },
