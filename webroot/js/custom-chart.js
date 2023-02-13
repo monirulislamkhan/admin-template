@@ -6,8 +6,18 @@ new Chart(ctx, {
     datasets: [
       {
         label: "Sales",
-        data: [12, 19, 3],
-        backgroundColor: ["#86d3e3", "#b9b9b9", "#faae47"],
+        data: [27, 33, 45],
+        backgroundColor: ["#86d3e3", "#b9b9b9", "#86d3e3"],
+      },
+      {
+        backgroundColor: ["#b9b9b9", "#86d3e3", "#b9b9b9"],
+        label: "Visits",
+        data: [32, 37, 47],
+      },
+      {
+        backgroundColor: ["#faae47", "#faae47", "#faae47"],
+        label: "Apointments",
+        data: [65, 31, 41],
       },
     ],
   },
